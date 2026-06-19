@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family:Outfit ;
+}
+.active hr{
+    @apply block
+}
+
+::-webkit-scrollbar{
+  
+  @apply hidden
+}
+@media (max-width:740px)
+{
+    .active p{
+        @apply text-white bg-primary
+    }
+}
+
+/* ── ChatBot window slide-in animation ───────────────────── */
+@keyframes chatSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Scrollbar visible inside chat window only */
+#chatbot-window ::-webkit-scrollbar {
+  display: block;
+  width: 4px;
+}
+#chatbot-window ::-webkit-scrollbar-track {
+  background: transparent;
+}
+#chatbot-window ::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 2px;
+}
+#chatbot-window ::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}

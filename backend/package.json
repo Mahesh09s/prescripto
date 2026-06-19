@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "2.0.0",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Prescripto backend — Node.js / Express 5 / MongoDB / Gemini AI / Google OAuth",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.10.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.5.2",
+    "google-auth-library": "^10.7.0",
+    "helmet": "^8.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.3.0",
+    "mongoose": "^8.16.4",
+    "morgan": "^1.11.0",
+    "multer": "^2.2.0",
+    "react-markdown": "^10.1.0",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

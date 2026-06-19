@@ -1,0 +1,13 @@
+{
+  "env": {
+    "VITE_API_URL": "https://prescripto-backend-5tow.onrender.com/api"
+  },
+  "build": {
+    "env": {
+      "VITE_API_URL": "https://prescripto-backend-5tow.onrender.com/api"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
